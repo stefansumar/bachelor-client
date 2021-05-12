@@ -184,7 +184,7 @@ export class Profile extends Component {
             return (
                 <div>
                     <Header />
-                    <div>
+                    <div className="divTable">
                         <h2 className="h2">{this.state.firstName} {this.state.lastName}</h2>
                         <h4 className="h4">Osnovni podaci </h4>
                         <h5 className="h5"><img src="/images/user.png" width="20" height="20" alt="" />Korisničko ime: {this.state.username}</h5>
@@ -232,23 +232,25 @@ export class Profile extends Component {
                         </table>
                     </div>
                     <Modal show={this.state.detailModalIsOpen}
-                        onHide={this.closeDetailsModal}>
+                        onHide={this.closeDetailsModal}
+                        centered
+                        className="modalShadow">
                         <Modal.Header>
                             <h5>{this.state.detailModal.thesis}</h5>
                         </Modal.Header>
                         <Modal.Body>
                             <h5>Opis:</h5>
-                            <p className="p">{this.state.detailModal.content}</p>
+                            <p className="paragraphDetailModal">{this.state.detailModal.content}</p>
                             <h5>Predmet:</h5>
-                            <p className="p">{this.state.detailModal.subject}</p>
+                            <p className="paragraphDetailModal">{this.state.detailModal.subject}</p>
                             <h5>Profesor:</h5>
-                            <p className="p">{this.state.detailModal.professorsLastName} {this.state.detailModal.professorsName}</p>
+                            <p className="paragraphDetailModal">{this.state.detailModal.professorsLastName} {this.state.detailModal.professorsName}</p>
                             <h5>Status:</h5>
-                            <p className="p">{this.state.detailModal.status}</p>
+                            <p className="paragraphDetailModal">{this.state.detailModal.status}</p>
                             <h5 hidden={this.state.detailModal.status !== 'REJECTED'}>Razlog odbijanja:</h5>
-                            <p className="p" hidden={this.state.detailModal.status !== 'REJECTED'}>{this.state.detailModal.rejectReason}</p>
+                            <p className="paragraphDetailModal" hidden={this.state.detailModal.status !== 'REJECTED'}>{this.state.detailModal.rejectReason}</p>
                             <h5 hidden={this.state.detailModal.status !== 'ON_CORRECTION'}>Korekcija: </h5>
-                            <p className="p" hidden={this.state.detailModal.status !== 'ON_CORRECTION'}>{this.state.detailModal.correction}</p>
+                            <p className="paragraphDetailModal" hidden={this.state.detailModal.status !== 'ON_CORRECTION'}>{this.state.detailModal.correction}</p>
                         </Modal.Body>
                         <Modal.Footer><Button onClick={this.closeDetailsModal}>Zatvori</Button></Modal.Footer>
                     </Modal>

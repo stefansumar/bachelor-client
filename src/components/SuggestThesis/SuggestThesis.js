@@ -82,17 +82,17 @@ export class SuggestThesis extends Component {
     SendRequest = event => {
         event.preventDefault();
         if (!this.state.title && !this.state.content) {
-            NotificationManager.warning('Molimo Vas, popunite sva polja.', 'Upozorenje!')
+            NotificationManager.error('Molimo Vas, popunite sva polja.', '')
             return
         }
 
         if (!this.state.title) {
-            NotificationManager.warning('Molimo Vas, unesite naziv teme.', 'Upozorenje!')
+            NotificationManager.error('Molimo Vas, unesite naziv teme.', '')
             return
         }
 
         if (!this.state.content) {
-            NotificationManager.warning('Molimo Vas, unesite kratak opis teme.', 'Upozorenje!')
+            NotificationManager.error('Molimo Vas, unesite kratak opis teme.', '')
             return
         }
 
@@ -104,7 +104,8 @@ export class SuggestThesis extends Component {
             professorId: this.state.professorId
         })
             .then(response =>
-                this.props.history.push('/profile')
+                this.props.history.push('/profile'),
+                NotificationManager.success('Uspešno ste prijavili temu.', '')
 
             )
             .catch(error =>
@@ -119,7 +120,7 @@ export class SuggestThesis extends Component {
                 <div className="container div">
                     <form onSubmit={this.SendRequest}>
                         <div>
-                            <h3 className="display-6">Predloži temu</h3>
+                            <h3 className="display-6">PREDLOŽI TEMU</h3>
                         </div>
                         <hr></hr>
                         <div className="form-group">
@@ -155,7 +156,7 @@ export class SuggestThesis extends Component {
                             ></textarea>
                         </div>
                         <div className="form-group">
-                            <button className="btn btn-primary">Pošalji predlog</button>
+                            <button className="btn btn-primary buttonSubmit">Pošalji predlog</button>
                         </div>
                     </form>
                 </div>

@@ -30,19 +30,19 @@ export class Header extends Component {
     renderNavbar() {
         if (this.state.role === "ROLE_STUDENT") {
             return (<div className="container-fluid">
-                <a className="navbar-brand a" href="/#">
-                    <img src="/images/diploma.png" width="30" height="30" className="d-inline-block align-top" alt="" /> Predloži temu</a>
+                <a className="navbar-brand a" href="/student">
+                    <img src="/images/diploma.png" width="30" height="30" className="d-inline-block align-top" alt="" /> PREDLOŽI TEMU</a>
                 <li className="nav-item suggest">
-                    <Link to="/thesisSuggest" className="link suggestThesis" href="/#">Predloži</Link>
+                    <Link to="/thesisSuggest" className="link suggestThesis" href="/#">PREDLOŽI</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/" className="nav-link link messages" href="/#">Poruke</Link>
+                    <Link to="/" className="nav-link link messages" href="/#">PORUKE</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/profile" className="nav-link link profile">Profil</Link>
+                    <Link to="/profile" className="nav-link link profile">PROFIL</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/" className="link logOut">Odjavi se</Link>
+                    <Link to="/" className="link logOut">ODJAVA</Link>
                 </li>
             </div>)
         } else {
@@ -50,19 +50,19 @@ export class Header extends Component {
                 <a className="navbar-brand a" href="/#">
                     <img src="/images/diploma.png" width="30" height="30" className="d-inline-block align-top" alt="" /> Predloži temu</a>
                 <li className="nav-item">
-                    <Link to="/showThesis" className="link " href="/#">Predlozi</Link>
+                    <Link to="/showThesis" className="link profSuggestions" >Predlozi</Link>
                 </li>
                 <li className="nav-item suggest">
-                    <Link to="/documents" className="link" href="/#">Dokumenti</Link>
+                    <Link to="/documents" className="link documents" href="/#">Dokumenti</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/" className="nav-link link " href="/#">Poruke</Link>
+                    <Link to="/" className="nav-link link profMessages" href="/#">Poruke</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/profile" className="nav-link link ">Profil</Link>
+                    <Link to="/profile" className="nav-link link profProfile">Profil</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/" className="link ">Odjavi se</Link>
+                    <Link to="/" className="link logOut">Odjavi se</Link>
                 </li>
             </div>)
         }

@@ -70,8 +70,8 @@ class Login extends Component {
             <div>
                 <div className="container homeDiv">
                     <h1 className="display-4 h1">
-                        <img src="/images/diploma.png" height="80" width="80" className="display-4" alt="" /> Predloži temu</h1>
-                    <p className="p">Dobro došli na platformu koja Vam omogućuje brz i lak predlog diplomskog ili master rada.
+                        PREDLOŽI TEMU</h1>
+                    <p className="paragraph">Dobro došli na platformu koja Vam omogućuje brz i lak predlog diplomskog ili master rada.
                     Imate mogućnost da željenom profesoru predložite temu koju biste želeli da obrađujete i da
                     sa njom zaokružite vaše celokupno studiranje.
                 </p>

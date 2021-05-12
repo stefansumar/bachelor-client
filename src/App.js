@@ -2,7 +2,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom'
 import { Switch, Route } from 'react-router'
-import { Footer } from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import Student from './components/Student/Student'
 import Professor from './components/Professor/Professor'
@@ -30,7 +29,6 @@ function App() {
           </Switch>
         </BrowserRouter>
       </main>
-      <Footer />
       <NotificationContainer />
     </div >
   );

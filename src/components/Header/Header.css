@@ -31,21 +31,42 @@ li {
 }
 
 .logOut {
-    margin-left: -300%;
+    margin-left: -330%;
+    font-weight: bold;
 }
 
 .profile {
-    margin-left: 120%;
+    margin-left:60%;
+    font-weight: bold;
 }
 
 .messages {
-    margin-left: 340%;
+    margin-left: 230%;
+    font-weight: bold;
 }
 
 .suggestThesis {
-    margin-left: 780%;
+    margin-left: 490%;
+    font-weight: bold;
 }
 
 .suggestions {
     margin-left: 780%;
+}
+
+.profProfile {
+    margin-left: 50%;
+}
+
+.profMessages {
+    margin-left: 215%;
+}
+
+.documents {
+    margin-left: 370%;
+}
+
+.profSuggestions {
+    margin-left: 700%;
+    width: 100px;
 }
