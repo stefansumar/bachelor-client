@@ -1,0 +1,19 @@
+.text {
+    text-align: left;
+}
+
+.tableWidth {
+    width: 750px;
+    margin-left: 22%;
+    margin-top: 1%;
+}
+
+.buttonSize {
+    width: 72.84px;
+    height: 30px;
+    text-align: center;
+}
+
+.img{
+    margin-top: -12px;
+}

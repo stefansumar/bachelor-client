@@ -1,0 +1,13 @@
+.footer_on_bottom {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 100px;
+
+}
+
+.footerParagraph {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 970px;
+    font-size: 12px;
+}

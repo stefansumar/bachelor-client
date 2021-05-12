@@ -1,0 +1,51 @@
+.a {
+    margin-left: 100px;
+}
+
+.button {
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.link {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    background-color: gray;
+    border: white;
+    border-radius: 10%;
+}
+
+a:hover {
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.logOut {
+    margin-left: -300%;
+}
+
+.profile {
+    margin-left: 120%;
+}
+
+.messages {
+    margin-left: 340%;
+}
+
+.suggestThesis {
+    margin-left: 780%;
+}
+
+.suggestions {
+    margin-left: 780%;
+}
